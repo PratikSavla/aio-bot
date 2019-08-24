@@ -18,3 +18,8 @@
     {% client %}(Do you know about|who is|tell me about)(.*){% endclient %}
     {% response %}{% call whoIs:%2 %}{% endresponse %}
 {% endblock %}
+
+{% block %}
+    {% client %}(let's get started){% endclient %}
+    {% response %}Hey, {% call identifyu:%2 %}{% endresponse %}
+{% endblock %}
