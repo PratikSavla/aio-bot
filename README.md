@@ -4,6 +4,7 @@
 
 #### Check List
 - [x] Finish chat template
+- [x] Identify the user while starting the conversation and in-between 
 - [X] Detect user's emotion (Currently detects only when user asks)
 - [x] Bot can remember the user name
 - [ ] Remember User's Details
