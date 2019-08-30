@@ -1,0 +1,53 @@
+{% block %}
+    {% client %}((I('| a)m|my name is) )?(.*){% endclient %}
+    {% prev %}(.*)Can you please tell me your name{% endprev %}
+    {% response %}Thank you {name:%4}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}Do you remember my name{% endclient %}
+    {% response %}{% if {name} %}Yes I do {name}{% else %}No,{% chat what is my name %}{% endif %}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}(.*)(feeling|i feel|my feeling)(.*){% endclient %}
+    {% response %}{% call emo:%2 %}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}(Do you know about|who is|tell me about)(.*){% endclient %}
+    {% response %}{% call whoIs:%2 %}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}(let's get started){% endclient %}
+    {% response %}Hey, {% cap {% call identifyu:%2 %} %}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}(.*)(rough day)(.*){% endclient %}
+    {% response %}Would you like to talk about it?{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}Yes|yes{% endclient %}
+    {% prev %}Would you like to talk about it?{% endprev %}
+    {% response %}Go ahead, tell me what happend.{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}No|no|(.*)later(.*){% endclient %}
+    {% prev %}Would you like to talk about it?{% endprev %}
+    {% response %}Okay, can I help you in any other way?{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}{% endclient %}
+    {% prev %}Go ahead, tell me what happend.{% endprev %}
+    {% response %}{% call whathappen:%2 %}{% endresponse %}
+{% endblock %}
+
+
+
+{ mood : sad }
+{ reason : bad time in two and a half men show }
