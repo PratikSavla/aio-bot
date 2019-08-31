@@ -1,0 +1,9 @@
+keras
+tensorflow
+python-opencv
+chatbotAI
+vaderSentiment
+face_recognition
+py_execute
+wikipedia
+mock
