@@ -7,3 +7,4 @@ face_recognition
 py_execute
 wikipedia
 mock
+py-enigma
