@@ -23,3 +23,13 @@
     {% client %}(let's get started){% endclient %}
     {% response %}Hey, {% cap {% call identifyu:%2 %} %}{% endresponse %}
 {% endblock %}
+
+{% block %}
+    {% client %}(learn mode question)(.*){% endclient %}
+    {% response %}{% call learnq:%2 %}{% endresponse %}
+{% endblock %}
+
+{% block %}
+    {% client %}(learn mode answer)(.*){% endclient %}
+    {% response %}{% call learna:%2 %}{% endresponse %}
+{% endblock %}
