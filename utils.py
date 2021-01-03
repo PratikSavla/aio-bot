@@ -145,17 +145,6 @@ def decryp(filename):
     print("files decrypted")
 
 
-# # Save Mood and Load The User template file
-
-# In[40]:
-
-@register_call("whathappen")
-def whathappen(query,sessionID="general"):
-    aa = query
-    nam = identifyu()
-    with open(nam+".txt", "a") as myfile:
-        myfile.write(aa)
-    return "Would you like to tell me more about it?"
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyser = SentimentIntensityAnalyzer()
 def sas(sentence):
