@@ -1,6 +1,6 @@
 keras==2.4.3
 tensorflow==2.4.0
-python-opencv==4.5.1.48
+opencv-python==4.5.1.48
 chatbotAI==0.3.0.0
 vaderSentiment==3.3.2
 py_execute==0.1.7
