@@ -42,9 +42,9 @@ Write answer in this format:
 
 ### Check List
 - [x] Finish chat template
-- [] Identify the user while starting the conversation(Not supported anymore)
+- [ ] Identify the user while starting the conversation(Not supported anymore)
 - [X] Detect user's emotion (Currently detects only when user asks)
-- [] Bot can remember the user name(Not supported anymore)
+- [ ] Bot can remember the user name(Not supported anymore)
 - [x] Remember User's Details(mood)
 - [X] Encrypts every user interaction using a complex crypto algo
 
