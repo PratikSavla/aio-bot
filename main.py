@@ -1,17 +1,13 @@
 from utils import *
 def chat():
-    nam = identifyu()
-    call = multiFunctionCall({"whoIs":whoIs,"emo":emo, "identifyu":identifyu, "whathappen":whathappen, "learnq":learnq, "learna":learna})
-    if nam == "Unknown":
-        firstQuestion="Hi, I am chatbot."
-        template = "Unknown.template"
-    else :
-        firstQuestion="Hi "+nam+" , nice to see you again."
-        template = nam+".template"
+    nam = "Unknown"
+    # call = multiFunctionCall({"whoIs":whoIs,"emo":emo, "identifyu":identifyu, "whathappen":whathappen, "learnq":learnq, "learna":learna})
+    firstQuestion="Hi, I am chatbot."
+    template = "Unknown.template"
     #print(template)
     decryp(template)
     
-    Chat(template, reflections,call=call).converse(firstQuestion)
+    Chat(template).converse(firstQuestion)
     
     from os import path
     if path.exists(nam+".txt"):
@@ -31,9 +27,5 @@ def chat():
         os.remove("learn.txt")
         
     encryp(template)
-
-
-# In[73]:
-
 
 chat()
