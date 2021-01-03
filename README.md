@@ -40,11 +40,11 @@ Write answer in this format:
 >learn mode ans {answer in second person grammer}
 ```
 
-### Check List
+### To Do
 - [x] Finish chat template
 - [ ] Identify the user while starting the conversation(Not supported anymore)
 - [X] Detect user's emotion (Currently detects only when user asks)
 - [ ] Bot can remember the user name(Not supported anymore)
-- [x] Remember User's Details(mood)
+- [ ] Remember User's Details
 - [X] Encrypts every user interaction using a complex crypto algo
 
