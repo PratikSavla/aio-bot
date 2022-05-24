@@ -1,5 +1,5 @@
 keras==2.4.3
-tensorflow==2.5.1
+tensorflow==2.6.4
 opencv-python==4.5.1.48
 chatbotAI==0.3.0.0
 vaderSentiment==3.3.2
