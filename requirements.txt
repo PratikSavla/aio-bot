@@ -1,4 +1,4 @@
-keras==2.4.3
+keras==3.13.2
 tensorflow==2.5.1
 opencv-python==4.5.1.48
 chatbotAI==0.3.0.0
